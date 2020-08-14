@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       App
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <table class="table">
+        <tr>
+                <h1>Corona virus</h1>
+                <div id="container">
+                    <table id="covid" class="table table-bordered table-hover table-success">
+                        <!-- showing data -->
+                    </table>
+                    <button onclick="exporttable('covid', 'sample_excel')">Export to excel</button>
+                    <button id="json">Export to json</button>
+                </div>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+    <script src="scripttwo.js"></script>
+    <script src="https://rawcdn.githack.com/FuriosoJack/TableHTMLExport/v2.0.0/src/tableHTMLExport.js"></script>
+  
+
+</body>
+
+</html>

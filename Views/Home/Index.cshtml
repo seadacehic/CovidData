@@ -1,0 +1,45 @@
+﻿@model CovidData.Models.LoginModel
+
+@{
+
+    ViewBag.Title = "Index";
+
+}
+
+<script language="javascript">
+
+    function display() {
+
+        if ($("#username").attr("value") == "") {
+            alert("Please Enter your Username.");
+            return false;
+        } else if ($("#password").attr("value") == "") {
+            alert("Please enter Password.");
+            return false;
+        }
+        return true;
+    }
+
+</script>
+
+<h3 class="text-center"> Login </h3>
+@*<link href="~/assets/css/stylelogin.css" rel="stylesheet">*@
+
+
+@using (Html.BeginForm("Index", "Home"))
+
+{
+
+    <div class="login-page">
+            <div class="form">
+                <form class="login-form" action="" method="post" id="lgform">
+
+                           @Html.TextBoxFor(m => m.UserName, new { @style = "width:200px", @id = "username", @placeholder = "username" })
+                           @Html.PasswordFor(m => m.UserPassword, new { @style = "width:200px", @id = "password", @placeholder = "password" })
+
+                    <input type="submit" value="Login" title="login" onclick=" display();" id="btnlogin" />
+
+                </form>
+            </div>
+        </div>
+}
