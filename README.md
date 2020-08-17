@@ -1,9 +1,9 @@
 # CovidData
 
 Welcome to my little app.
-I have commited an visual studio web application, with basic authentication and the web part and second, the web part separately.
+I have commited an visual studio web application, with basic authentication and the web part and second, the web part separately (CovidWEB folder).
 
-By openin the web application on visual studio, you have to write username and password which I defined in an array.
+By opening the web application on visual studio, you have to write username and password which I defined in an array.
 So you can write these values ( first username, second password ) :
 user1 - password1
 user2 - password2
